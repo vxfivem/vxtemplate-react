@@ -8,7 +8,7 @@ const App: FC = () => {
   return (
     <>
       <div>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
@@ -18,6 +18,7 @@ const App: FC = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+        <div />
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>

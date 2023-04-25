@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), svgr({})],
   base: '/ui/',
   build: {
-    outDir: '../ui',
+    outDir: '../../../ui',
     emptyOutDir: true,
   },
 });

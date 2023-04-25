@@ -7,5 +7,9 @@ server_script 'server.js'
 client_script 'client.js'
 
 
-file 'index.html'
+files {
+  'ui/*',
+  'ui/**/*',
+}
+
 ui_page 'index.html'

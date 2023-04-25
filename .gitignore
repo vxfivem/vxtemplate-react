@@ -4,5 +4,6 @@ build
 
 /client.js
 /server.js
+/ui
 
 .env
