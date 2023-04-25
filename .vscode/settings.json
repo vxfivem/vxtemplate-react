@@ -1,0 +1,26 @@
+{
+  "prettier.configPath": "./code/.prettierrc",
+  "eslint.options": {},
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.validate": [
+    "typescript"
+  ],
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "jspm_packages": true,
+    "node_modules": true
+  },
+  "Lua.diagnostics.disable": [
+    "undefined-global"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "vx_server",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "node ./scripts/build.js"
+  },
+  "dependencies": {
+    "@overextended/oxmysql": "^1.1.3",
+    "@vxframework/core": "^0.0.2-alpha-3",
+    "@vxframework/server": "^0.0.2-alpha-3"
+  },
+  "devDependencies": {
+    "@citizenfx/server": "^2.0.6403-1"
+  }
+}

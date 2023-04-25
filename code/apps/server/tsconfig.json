@@ -1,0 +1,30 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "sourceMap": true,
+        "outDir": "./dist",
+        "declaration": true,
+        "noEmit": true,
+        "types": [
+            "@types/node",
+            "@citizenfx/server"
+        ],
+        "paths": {
+            "@core": [
+                "./src/core"
+            ],
+            "@app": [
+                "./src/app"
+            ],
+            "@persistence": [
+                "./src/persistence"
+            ]
+        }
+    },
+    "include": [
+        "./src"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
