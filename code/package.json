@@ -4,6 +4,7 @@
   "main": "index.js",
   "private": true,
   "type": "module",
+  "sideEffects": false,
   "workspaces": [
     "libs/*",
     "apps/*"
