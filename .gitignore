@@ -1,6 +1,7 @@
 node_modules
 dist
 build
+yarn-error.log
 
 /client.js
 /server.js
