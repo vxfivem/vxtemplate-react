@@ -1,5 +1,9 @@
 {
   "parser": "@typescript-eslint/parser",
+  "ignorePatterns": [
+    "temp.js",
+    "*.js"
+  ],
   "plugins": [
     "@typescript-eslint/eslint-plugin"
   ],

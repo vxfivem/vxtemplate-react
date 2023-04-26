@@ -2255,24 +2255,24 @@
     "@babel/plugin-transform-react-jsx-source" "^7.19.6"
     react-refresh "^0.14.0"
 
-"@vxframework/client@^0.0.2-alpha-3":
-  version "0.0.2-alpha-3"
-  resolved "https://registry.npmjs.org/@vxframework/client/-/client-0.0.2-alpha-3.tgz"
-  integrity sha512-kizNlz/04fGTHRWURND+F4hZPQK+IiWPgN2LFgiyEREJ/4kBftLcYr+JbpApQ7UD6ihmv81oN1rvQRbniLcaqA==
+"@vxframework/client@^0.0.2-alpha-4":
+  version "0.0.2-alpha-4"
+  resolved "https://registry.yarnpkg.com/@vxframework/client/-/client-0.0.2-alpha-4.tgz#c26281466f4745e2c86466b6445db5b034f3d37b"
+  integrity sha512-vuRghw9ZauZuHdkF3/kBn+a3/WnQrny9FTBymSQDrui/RKI2vkzmPCYZ+fsi1qWjCtniRbOc/vJwFPzG4h/i0Q==
 
-"@vxframework/core@^0.0.2-alpha-3":
-  version "0.0.2-alpha-3"
-  resolved "https://registry.npmjs.org/@vxframework/core/-/core-0.0.2-alpha-3.tgz"
-  integrity sha512-gXJEYmM3zuPG9wUnC2PgoDpHWZE0RLA/e5HiMzXqKZm5w0HeE4JrH5O9Z9JZ7XtzMHfYKnZUirXBeKjBHBecng==
+"@vxframework/core@^0.0.2-alpha-4":
+  version "0.0.2-alpha-4"
+  resolved "https://registry.yarnpkg.com/@vxframework/core/-/core-0.0.2-alpha-4.tgz#1192f1b837285ca01b03b29ea1088fda9bb5daa3"
+  integrity sha512-8wEL9qgDyfsmgUyeZrCOKWnx5/HMxGdLsGiUUeHAoSowmqTUhboPKKTzPmjJ85hRaEX7P5nOaz62/6xUacSr/w==
   dependencies:
     eventemitter2 "^6.4.9"
     inversify "6.0.1"
     reflect-metadata "0.1.13"
 
-"@vxframework/server@^0.0.2-alpha-3":
-  version "0.0.2-alpha-3"
-  resolved "https://registry.npmjs.org/@vxframework/server/-/server-0.0.2-alpha-3.tgz"
-  integrity sha512-qsRZZrbsOfgysQjUt2R9Ct/j4jk9TdBkssRcqecpQyJOM1+HrKe+0TBE/3Fbzco8tiue04oO7z9VjTD5EwcGiA==
+"@vxframework/server@^0.0.2-alpha-4":
+  version "0.0.2-alpha-4"
+  resolved "https://registry.yarnpkg.com/@vxframework/server/-/server-0.0.2-alpha-4.tgz#2b3af7809ae6133edfde1f580d9d0bfb82dc46c4"
+  integrity sha512-MTJpiugoX9GhWT0Qpwqt5Sdrp2An6F+F0BRXdETRiGmHCzCPXrPK25eUqUzxZwUNZyVn8RK96NtqMX3X/W2SVA==
 
 "@yarnpkg/lockfile@^1.1.0":
   version "1.1.0"

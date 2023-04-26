@@ -1,0 +1,3 @@
+{
+  "greeting": "Hello! Server {{resourceName}} is started. configValue is {{configValue}}"
+}

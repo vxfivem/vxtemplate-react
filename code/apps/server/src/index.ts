@@ -1,16 +1,26 @@
-import { AppFactory, OnNetEvent } from '@vxframework/core';
+import * as controllers from './api/controllers';
+import * as guards from './api/guards';
+import * as exceptionHandlers from './api/exception-handlers';
+import * as tranformers from './api/transformers';
+import { AppFactory, ILogger, LOGGER_TAG } from '@vxframework/core';
 
-const builder = AppFactory.createBuilder();
+const main = async (): Promise<void> => {
+  const builder = AppFactory.createBuilder({
+    locales: ['locales/server.json'],
+    configs: ['configs/server.json'],
+  });
 
-class TestController {
-  @OnNetEvent('qwe')
-  public onNet(): void {
-    return;
-  }
-}
+  Object.values(controllers).forEach((controller) => builder.addController(controller));
+  Object.values(guards).forEach((guard) => builder.addGuard(guard));
+  Object.values(tranformers).forEach((transformer) => builder.addTransformer(transformer));
+  Object.values(exceptionHandlers).forEach((exceptionHandler) => builder.addExceptionHandler(exceptionHandler));
 
-builder.addController(TestController);
+  const app = builder.build();
+  app.start();
+  const logger = app.provider.get<ILogger>(LOGGER_TAG);
+  Reflect.set(logger, 'context', 'APP');
+  const configValue = builder.config.getOrThrow('server.value');
+  logger.info(builder.locale.translate('server.greeting', { resourceName: GetCurrentResourceName(), configValue }));
+};
 
-const app = builder.build();
-
-app.start();
+main();
